@@ -1,0 +1,45 @@
+Step 1: Open your terminal inside VS Code / IDE
+
+Look at the top menu bar in your code editor.
+Click Terminal New Terminal (or press Ctrl + ~ on Windows).
+Ensure your terminal prompt shows your project root folder:
+
+cmd
+c:\Users\kuram\Desktop\Ledger
+
+Step 2: Ensure Node dependencies are installed (First-time / One-time step)
+Before running, let's make sure all package dependencies are installed.
+
+Run this command in your terminal:
+
+bash
+npm install
+(If you have already run npm install before, you can skip this step).
+
+Step 3: Start the project
+Your 
+
+package.json
+ is already set up to run both your Backend Express Server and your Frontend Vite App simultaneously with a single command!
+
+Type and run:
+
+bash
+npm run dev
+Step 4: What happens behind the scenes?
+When you run npm run dev, it launches two processes together:
+
+[server]: Starts the Express backend on http://localhost:5000 (or 5001) which powers your SQLite database and API endpoints.
+[vite]: Starts your React user interface on http://localhost:5173.
+Step 5: Open the app in your Web Browser
+Open Google Chrome (or any browser).
+Go to:
+text
+http://localhost:5173
+(Or click the link printed in your terminal under the green [vite] logs).
+How to Stop the Project Later
+Whenever you want to shut down the server and application:
+
+Click inside the terminal window.
+Press Ctrl + C on your keyboard.
+Type Y (if prompted) and press Enter.
